@@ -19,17 +19,5 @@ public class Macizo1Application {
     SpringApplication.run(Macizo1Application.class, args);
   }
 
-  @Bean
-  CommandLineRunner runner(UserRepository userRepository) {
-    return args -> {
-      // Crear usuarios
-      Usuario user1 = new Usuario("sub-zero", "email@", "123",25,"Aumentar masa muscular");
-      Usuario user2 = new Usuario("Scorpion", "email2@", "321",25,"Aumentar masa muscular");
-      userRepository.saveAll(Arrays.asList(user1, user2));
-
-
-    };
-  }
-
 
 }

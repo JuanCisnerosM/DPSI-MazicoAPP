@@ -11,7 +11,8 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/macizoapp/recipes")
 public class SpooController {
 
-  private final String apiK = "660e7a7e596f492c8a5ce5111ff5c9dc";
+  // Poner tu APIkey
+  private final String apiK = "e5480be26e0d454f94d3c35a9a75136f";
 
   @GetMapping
   public ResponseEntity<String> getRecipes() {
