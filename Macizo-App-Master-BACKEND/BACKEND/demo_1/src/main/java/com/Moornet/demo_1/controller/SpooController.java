@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 public class SpooController {
 
   // Poner tu APIkey
-  private final String apiK = "e5480be26e0d454f94d3c35a9a75136f";
+  private final String apiK = "";
 
   @GetMapping
   public ResponseEntity<String> getRecipes() {
