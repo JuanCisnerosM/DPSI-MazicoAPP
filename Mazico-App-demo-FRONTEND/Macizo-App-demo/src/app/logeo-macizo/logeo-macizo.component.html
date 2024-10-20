@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logeo</title>
+
+    <style>
+      body {
+        /*height: 100vh;*/
+        background-color: #f8f9fa;
+      }
+      .login-container {
+        margin: 15px auto;
+        width: 100%;
+        max-width: 400px;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <app-header-macizo></app-header-macizo>
+    <!-- @if(form){-->
+    <div class="login-container">
+      <h3 class="text-center mb-24">Macizo APP</h3>
+      <form>
+        <div class="form-group">
+          <label for="username">Nombre de Usuario</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            placeholder="Ingresa un Nombre de usuario"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Ingresa tu Correo"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Introduce tu contraseña"
+            required
+          />
+        </div>
+        <br />
+        <button
+          type="submit"
+          routerLink="/objetivo"
+          class="btn btn-primary btn-block"
+        >
+          Iniciar Sesión
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
